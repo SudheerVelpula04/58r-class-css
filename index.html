@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <!--
+    HTML
+    git
+    CSS-style
+    cascading style sheet
+    1. inline CSS
+    2. internal CSS
+    3. External CSS
+
+    css rule set or syx
+    ------------
+    selector {
+     property:value;
+    }
+
+    selectors
+    ----------
+    5 types of selectors
+    1. simple
+        id-#
+        class-.
+        group-,
+        element or tagname
+
+
+
+    2. combinators
+    3. pclass
+    4. pelements
+    5. attribute selectors
+
+    !important
+    color-
+    bg-color
+    font-size-
+    
+
+     -->
+    <header>
+        <section>
+        <center>
+            <h2 class="studentName">Student Name:</h2>
+        </center>
+        </section>
+        <section>
+            <nav>
+                <center>
+                    <a href="#about">About</a>
+                    &nbsp;&nbsp; <span>|</span> &nbsp;&nbsp;
+                    <a href="#skills">Skills</a>
+                    &nbsp;&nbsp; <span>|</span> &nbsp;&nbsp;
+                    <a href="#education">Education</a>
+                    &nbsp;&nbsp; <span>|</span> &nbsp;&nbsp;
+                    <a href="#projects">Projects</a>
+                    &nbsp;&nbsp; <span>|</span> &nbsp;&nbsp;
+                    <a href="#contact">Contact</a>
+                </center>
+            </nav>
+        </section>
+    </header>
+
+    <hr>
+    <!-- about me section -->
+    <section>
+        <h3 id="about" class="about"><u>About Me:</u></h3>
+        <center>
+            <img src="./images/youtube-icon.png" width="100" alt="My Photo">
+        </center>
+        <dl>
+            <dt>
+
+            </dt>
+            <dd>
+                Hello! I am a student learning <span contenteditable="true">HTML</span>. This is my personal portfolio website. 
+            </dd>
+        </dl>
+    </section>
+    <hr>
+    <!-- Skills section -->
+     <section>
+        <h3 id="skills"><u>Skills</u></h3>
+        <ul>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+            <li>Node</li>
+        </ul>
+     </section>
+     <hr>
+     <section>
+        <h3 id="education" ><u>Education</u></h3>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr >
+                <th>Course</th>
+                <th>Collage or School Name</th>
+                <th>YOP</th>
+                <th>%</th>
+            </tr>
+            <tr align="center">
+                <td>B Tech</td>
+                <td>SSN Engineering Collage</td>
+                <td>2024</td>
+                <td>7.7</td>
+            </tr>
+            <tr align="center">
+                <td>Inter</td>
+                <td>Sri Chy</td>
+                <td>2021</td>
+                <td>88%</td>
+            </tr>
+             <tr align="center">
+                <td>SSC</td>
+                <td>SGGS</td>
+                <td>2019</td>
+                <td>8.8</td>
+            </tr>
+        </table>
+     </section>
+     <hr>
+     <section>
+        <h3 id="projects">My Projects</h3>
+        <ol>
+            <li>
+                <dl>
+                <dt>
+                    Project Title
+                </dt>
+                <dd>
+                        Project Screenshot
+                            This project demonstrates my understanding of HTML and basic design.
+
+                </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        Project Title
+                    </dt>
+                    <dd>
+                        Project Screenshot
+                            This project demonstrates my understanding of HTML and basic design.
+
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+        
+     </section>
+
+     <hr>
+     <section>
+      <center>
+        <h3 id="contact"> 
+            Contact
+        </h3>
+          <form action="">
+            <table border="0" cellpadding="2" cellspacing="0" width="40%">
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email" id="email" pattern="[a-z[\d]._]+@(gmail|yahoo|outlook)\.(com|in|gov|org|edu)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Gender:</label>
+                    </td>
+                    <td>
+                        <label for="male">Male:</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="Female">Female:</label>
+                        <input type="radio"name="gender" id="Female" value="Female">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Course">Course</label>
+                    </td>
+                    <td>
+                        <select name="Course" id="Course">
+                            <option value="" disabled selected>--select--</option>
+                            <option value="B tech">B tech</option>
+                            <option value="M Tech">M Tech</option>
+                            <option value="BSE">BSE</option>
+                            <option value="MSC">MSC</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Message:</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="" rows="6" cols="30">
+type message hear...
+                        </textarea>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <input type="submit">
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+            </table>
+          </form>
+      </center>
+     </section>
+     <hr>
+     <section>
+        <center>
+            <h3 id="video">
+                Watch My Video
+            </h3>
+            <video width="500" controls autoplay muted loop>
+                <source src="./video/3129671-uhd_3840_2160_30fps.mp4">
+            </video>
+        </center>
+     </section>
+     <hr>
+     <section>
+        <center>
+            <h3>
+                Listen to My Audio
+            </h3>
+
+            <audio controls autoplay muted loop>
+                <source src="./songs/[iSongs.info] 01 - Ranga Ranga.mp3">
+            </audio>
+        </center>
+     </section>
+     <hr>
+    <footer>
+        <center>
+            <h3>
+                My Address:
+            </h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9050.643129922948!2d78.39561111006154!3d17.491912180007255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9156f7afb389%3A0xdf398d9fcd887e85!2sLuLu%20Mall%20Hyderabad!5e0!3m2!1sen!2sin!4v1754292313745!5m2!1sen!2sin" frameborder="1" width="400" height="200"></iframe>
+        </center>
+    </footer>
+</body>
+</html>

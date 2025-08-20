@@ -1,0 +1,15 @@
+.studentName{
+    color: red;
+}
+a{
+    color: lightcoral;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.about,h3{
+    background-color: purple;
+    color: red;
+    font-size: xx-large;
+}
