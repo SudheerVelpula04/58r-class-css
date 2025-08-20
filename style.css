@@ -1,15 +1,48 @@
-.studentName{
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-a{
-    color: lightcoral;
-}
-body{
-    background-color: black;
-    color: white;
-}
-.about,h3{
-    background-color: purple;
-    color: red;
-    font-size: xx-large;
+ /* h1{
+    margin: 0;
+ }
+ p{
+    margin: 0;
+ } */
+.container{
+    width: 100px;
+    height: 100px;
+    /* padding-top: 10px; */
+    background-color: lightblue;
+    /* padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    /* padding: 10px; */
+    /* border-top-width:10px ;
+    border-top-style: solid;
+    border-right-width:20px ;
+    border-right-style: dotted;
+    border-bottom-width: 10px;
+    border-bottom-style: dashed;
+    border-left-width: 20px;
+    border-left-style:groove; */
+
+/* 
+    border-style: solid;
+    border-width: 10px;
+    border-color:red ; */
+
+    border: 2px solid red;
+
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+
+    /* margin: 10px; */
+    padding: 10px ;
+    margin: 10px ;
+    
+
+
 }
