@@ -1,36 +1,54 @@
-*{
-   scroll-behavior: smooth;
-}
-
-.nav-container{
-   background-color: black;
-   padding: 10px;
-   color: white;
-   position: fixed;
-   width: 100%;
-   top: 0px;
-   z-index: +1;
-   /* height: 100%; */
-
-}
-a{
-   color: white;
-   /* display: block; */
-   /* width: 100px; */
-   text-decoration: none;
-}
-.student-container{
-   margin-top: 50px;
-}
-body{
-   background-color: lightcoral;
-}
-h3{
+.div-container{
+   width: 100px;
+   height: 100px;
    background-color: lightgreen;
-   padding: 10px;
-   text-align: center;
-   color: purple;
-   position: sticky;
-   top: 50px;
-   /* z-index: +1; */
+   display: inline-block;
+   /* display: none; */
+   /* visibility: hidden; */
+   /* display: inline; */
+   /* display: block;
+   display: inline-block;
+   display: none;
+   visibility: hidden; */
+
+   /* display: flex;
+   display: grid; */
+}
+.span-container{
+   width: 100px;
+   height: 100px;
+   background-color: lightslategray;
+   display: inline-block;
+   /* display: none; */
+}
+p{
+   color: rebeccapurple;
+   /* text-transform: lowercase; */
+   /* text-transform: uppercase; */
+   /* text-transform: capitalize; */
+   /* text-justify: auto; */
+}
+.pavan-container{
+   width: 200px;
+   height: 200px;
+   border: 2px solid;
+   border-radius: 50%;
+   position: relative;
+
+}
+img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+
+}
+.p-name{
+   position: absolute;
+   top: 120px;
+   left: 40px;
+   color:chocolate;
+   text-transform: uppercase;
+   background-color: aqua;
+   padding: 5px;
+   border-radius: 10px;
 }
