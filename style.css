@@ -28,6 +28,8 @@
     height: 150px;
     border: 2px solid red;
     position: relative;
+    margin: 7px;
+    display: inline-block;
  }
  img{
     width: 100%;
