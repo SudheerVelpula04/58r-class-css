@@ -1,169 +1,110 @@
 /*
-flex-child 
-short end prop
-padding:top right bottom left;
- 
+pseudo class
+------------
+
+
  */
- .container{
-   display: flex;
-   /* background-color: lightsteelblue; */
-   border: 2px solid;
-   flex-wrap: wrap;
-   gap: 5px;
- }
- .item{
-   padding: 10px;
-   /* width: 0%; */
-   /* flex-shrink: 1;  this is the default pro */
-   /* flex-grow: 0; this is the default pro   */
-   flex-basis: 0%;
-   text-align: center;
-    flex-grow: 1;
 
+ /* a:link{
+   color: yellow;
  }
- 
- .item-1{
-    background-color: lightblue;
-    /* flex-shrink: 2; */
-    /* order: -1; */
-
+  a:hover{
+   color: red;
  }
- .item-2{
-    background-color: lightcoral;
-    order: 1;
+ a:visited{
+   color: goldenrod;
  }
- .item-3{
-    background-color: lightgray;
- }
- .item-4{
-    background-color: lightgreen;
- }
- .item-5{
-    background-color: lightsalmon;
- }
- .item-6{
-   background-color: lime;
-  
- }
-/* 
- *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+ a:active{
+   color: green;
  } */
- .parent{
-   display: flex;
-   justify-content: center;
- }
-.img-container{
-   width: 50%;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
-   justify-content: center;
 
-}
-.item-img{
-   width: 300px;
-   height: 200px;
-   /* border: 2px solid; */
-   position: relative;
-   flex-grow: 1;
-}
-.item-img>img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
-.item-img>p{
-   position: absolute;
-   top: 0px;
-   background-color: black;
-   color: white;
-   padding: 4px;
-}
-.interview{
-   width: 300px;
-   height: 300px;
-   border: 4px solid;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+ /* :root{
+   color: red;
+ } */
+
+ /* .container>p:nth-child(odd){
    background-color: red;
-   /* transition-property:all;
-   transition-duration: 1s;
-   transition-timing-function: ease-in; */
-   /* transition: all 0.5s ease; */
-   /* transition: PRONAME DURATION TIMEINGFUNC; */
-}
-.interview>p,.interview{
-   transition-property:all ;
-   transition-duration: 0.5s;
-   transition-timing-function: ease-in;
-}
-.interview:hover{
-   background-color: yellow;
-   padding: 10px;
-   border: 4px dotted;
-   cursor: pointer;
-   /* margin: ; */
-}
-img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover ;
-}
-.interview>p:hover{
-   font-size: x-large;
-}
-
-/* body,html{
-   height: 100%;
-}
-body{
+   color: aqua;
+ } */
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   /* 
+  .container{
+   background-color: aqua;
    display: flex;
-   justify-content: center;
-   align-items: center;
-} */
-div{
+   gap: 10px;
+   padding: 10px; */
+   /* border: 2px solid; */
+   flex-direction: column;
+   width: fit-content;
+   /* display: none; */
+   /* position: relative;
+   top: -220px;
+   transition: 0.5s ease; 
+   height: 0px;
+   overflow: hidden;
+   */
+
+
+  /* }
+  .bi{
+   font-size: xx-large;
+  }
+  p{
+   display: none;
+  }
+  #check{
+   display: none;
+  } */
+  /* #check:checked+p{
+   display: inline-block;
+  }
+  #check:checked~.container{
+   display: flex;
+  } */
+
+  /* #check:checked+.container{
+   top: 0px;
+  } */
+
+  /* #check:checked+.container{
+   height: 100%;
+  } */
+
+
+.cat-para{
    width: 200px;
    height: 200px;
-   border: 2px solid;
-   border-radius: 10%;
-   overflow: hidden;
-   transition: 0.5s ease;
 }
-div:hover{
-   /* text-align:end; */
-   /* text-align: justify; */
-   /* text-decoration: none; */
-   /* text-transform: lowercase; */
-   /* color: black; */
-   /* overflow: visible; */
-   border-radius: 50%;
-   background-image: url("https://i.pinimg.com/736x/f6/3d/c3/f63dc382b451b4970c772fbf52cd097a.jpg");
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
+label{
+   width: 100%;
+   display: inline-block;
+   background-color: aqua;
+   cursor: pointer;
+   text-align: center;
+   
 }
-div:hover>p>a{
-   visibility: hidden;
+label:hover{
+   color: red;
 }
-div+p{
-   position: absolute;
-   top: 150px;
-   left: 100px;
-   letter-spacing: 7px;
-   /* visibility: hidden; */
+.cat-para>img{
+   width: 100px;
+   height: 100px;
    display: none;
 }
-div:hover+p{
-   /* visibility: visible; */
-   display: inline-block;
-   z-index: +1;
-   /* font-size: xx-large; */
+#cat:checked~.cat-para>img{
+   display: flex;
 }
-div+p{
-   font-size: small;
-   transition: 0.8s ease;
+.milk-con{
+   display: none;
 }
+#milk:checked~.milk-con{
+   display: flex;
+}
+#milk,#cat{
+   display: none;
+}
+
