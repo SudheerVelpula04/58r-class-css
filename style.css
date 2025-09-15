@@ -1,110 +1,85 @@
-/*
-pseudo class
-------------
-
-
- */
-
- /* a:link{
-   color: yellow;
- }
-  a:hover{
-   color: red;
- }
- a:visited{
-   color: goldenrod;
- }
- a:active{
-   color: green;
- } */
-
- /* :root{
-   color: red;
- } */
-
- /* .container>p:nth-child(odd){
-   background-color: red;
-   color: aqua;
- } */
-   *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-   }
-   /* 
-  .container{
-   background-color: aqua;
-   display: flex;
-   gap: 10px;
-   padding: 10px; */
-   /* border: 2px solid; */
-   flex-direction: column;
-   width: fit-content;
-   /* display: none; */
-   /* position: relative;
-   top: -220px;
-   transition: 0.5s ease; 
-   height: 0px;
-   overflow: hidden;
-   */
-
-
-  /* }
-  .bi{
-   font-size: xx-large;
-  }
-  p{
-   display: none;
-  }
-  #check{
-   display: none;
-  } */
-  /* #check:checked+p{
-   display: inline-block;
-  }
-  #check:checked~.container{
-   display: flex;
-  } */
-
-  /* #check:checked+.container{
-   top: 0px;
-  } */
-
-  /* #check:checked+.container{
-   height: 100%;
-  } */
-
-
-.cat-para{
-   width: 200px;
-   height: 200px;
+*{
+   margin: 0;
+   padding: 0;
 }
-label{
+.lable-container{
    width: 100%;
-   display: inline-block;
-   background-color: aqua;
-   cursor: pointer;
    text-align: center;
+   background-color: aqua;
+   padding: 10px;
    
 }
-label:hover{
-   color: red;
+.lable-container>label{
+   margin-right:10px ;
+   background-color: blueviolet;
+   color: white;
+   padding: 5px;
 }
-.cat-para>img{
-   width: 100px;
-   height: 100px;
-   display: none;
+.mirai,.little{
+   /* display: none; */
+   position: relative;
+   bottom: 500px;
+   z-index: -1;
+   transition: 0.8s ease;
 }
-#cat:checked~.cat-para>img{
+.mirai-container,.little-container{
    display: flex;
+   justify-content: center;
+   gap: 10px;
+   align-items: start;
+   
 }
-.milk-con{
+   .item{
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+   }
+#mirai,#little{
    display: none;
 }
-#milk:checked~.milk-con{
-   display: flex;
+#mirai:checked~.mirai{
+   /* display: flex;
+   justify-content: center; */
+   bottom: 0px;
+   z-index: -1;
 }
-#milk,#cat{
+#little:checked~.little{
+   /* display: flex;
+   justify-content: center; */
+   bottom:120px;
+   z-index: -1;
+}
+img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+ .item-1{
+    background-color: lightblue;
+ }
+ .item-2{
+    background-color: lightcoral;
+ }
+ .item-3{
+    background-color: lightgray;
+ }
+ .item-4{
+    background-color: lightgreen;
+ }
+ .item-5{
+    background-color: lightsalmon;
+ }
+ .img-1,.img-2,.img-3,.img-4,.img-5,.img-6{
    display: none;
-}
+ }
+ #a:checked~.img-1{
+   position: absolute;
+   top: 0;
+   display: inline-block;
+   /* width: 500px;
+   height: 500px; */
 
+ }
+#d:checked~:root{
+   background-color: black;
+}

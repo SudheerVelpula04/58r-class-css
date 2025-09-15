@@ -8,48 +8,81 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
-    <label for="milk">MILK</label>
-    <label for="cat">CAT</label>
-
-    <input type="radio" id="milk" class="cat" name="radio">
-    <input type="radio" id="cat" class="cat" name="radio">
-
-    <div class="cat-para">
-        <img src="data:image/jpeg;base64,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" alt="">
-    </div>
-    <div class="milk-con">
-        take a milk
-    </div>
-
-
-    <!-- <label for="check"><i class="bi bi-list"></i></label>
-    <input type="checkbox" id="check"> -->
     
-    <!-- <div class="container">
-        <div class="item item-1">item-1</div>
-        <div class="item item-2">item-2</div>
-        <div class="item item-3">item-3</div>
-        <div class="item item-4">item-4</div>
-        <div class="item item-5">item-5</div>
-    </div> -->
 
 
+    <div class="lable-container">
+        <label for="mirai" class="movie-name">mirai</label>
+        <label for="little" class="movie-name">Little hearts</label>
+    </div>
+
+    <input type="radio" id="mirai" name="radio">
+    <input type="radio" id="little" name="radio">
+    <div class="mirai">
+        <div class="mirai-container">
+            <div class="item item-1">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGE2N2MyOGEtNjlkNC00NmVhLTk3ZDQtYjlhMzQ5ZDhjMDQ3XkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-2">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGE2N2MyOGEtNjlkNC00NmVhLTk3ZDQtYjlhMzQ5ZDhjMDQ3XkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGE2N2MyOGEtNjlkNC00NmVhLTk3ZDQtYjlhMzQ5ZDhjMDQ3XkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-4">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGE2N2MyOGEtNjlkNC00NmVhLTk3ZDQtYjlhMzQ5ZDhjMDQ3XkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-5">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGE2N2MyOGEtNjlkNC00NmVhLTk3ZDQtYjlhMzQ5ZDhjMDQ3XkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="little">
+        <div class="little-container">
+            <div class="item item-1">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMyMTgyYjgtOTM3ZC00OGMyLWI3YTEtMDFkZmJiOGUxMzZjXkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-2">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMyMTgyYjgtOTM3ZC00OGMyLWI3YTEtMDFkZmJiOGUxMzZjXkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMyMTgyYjgtOTM3ZC00OGMyLWI3YTEtMDFkZmJiOGUxMzZjXkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-4">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMyMTgyYjgtOTM3ZC00OGMyLWI3YTEtMDFkZmJiOGUxMzZjXkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+            <div class="item item-5">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMyMTgyYjgtOTM3ZC00OGMyLWI3YTEtMDFkZmJiOGUxMzZjXkEyXkFqcGc@._V1_.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
 
-    <!-- <a href="#">Click</a> -->
-     <!-- <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit reprehenderit cum laborum dignissimos provident, ullam tempora voluptatibus incidunt neque totam quisquam, repudiandae perspiciatis. Ex excepturi consectetur ratione accusamus sequi?</p>
-     </div> -->
+    <label for="a"> lates- a</label>
+    <label for="b"> lates- b</label>
+    <label for="c"> lates- c</label>
+    <label for="d"> lates- d</label>
+    <label for="e"> lates- e</label>
+    <label for="f"> lates- e</label>
+    
+
+    <input type="radio" name="radio" class="a" id="a">
+    <input type="radio" name="radio" class="b" id="b">
+    <input type="radio" name="radio" class="c" id="c">
+    <input type="radio" name="radio" class="d" id="d">
+    <input type="radio" name="radio" class="e" id="e">
+    <input type="radio" name="radio" class="f" id="f">
+    <br>
+
+    <img src="https://picsum.photos/id/1/200/300" class="img-1" alt="">
+    <img src="https://picsum.photos/id/1/200/300" class="img-2" alt="">
+    <img src="https://picsum.photos/id/1/200/300" class="img-3" alt="">
+    <img src="https://picsum.photos/id/1/200/300" class="img-4" alt="">
+    <img src="https://picsum.photos/id/1/200/300" class="img-5" alt="">
+    <img src="https://picsum.photos/id/1/200/300" class="img-6" alt="">
 </body>
+
 </html>
