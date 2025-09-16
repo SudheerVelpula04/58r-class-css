@@ -1,85 +1,120 @@
-*{
+/*
+   task
+   ----
+units in css
+------------
+   units are to specify the size of the container
+there are 2 types of units
+1. absolute units
+      px,in,cm,mm ->fixed units
+
+2. relative units
+   %
+   vh,-viewport-height
+   vw-viewport-width
+   em- element size
+   rem- root element size
+
+
+
+   calc()-function
+
+   default -font-size :16px in html
+   em- parent element font-siz
+   rem- root element font-size
+
+
+*/
+/* *{
    margin: 0;
    padding: 0;
-}
-.lable-container{
-   width: 100%;
-   text-align: center;
-   background-color: aqua;
-   padding: 10px;
+} */
+.container{
+   border: 2px solid;
+   /* height: 50px; */
+   display: flex;
    
 }
-.lable-container>label{
-   margin-right:10px ;
-   background-color: blueviolet;
-   color: white;
-   padding: 5px;
+/* .container>.child-1{
+   background-color: red;
+   width: 25%;
+   height: 200px;
+} */
+.child-1,.child-2,.child-3,.child-4,.child-5{
+   width: 100%;
+   height: 20px;
+   background-color: red;
+   margin: 10px 0px;
+   border-radius:5px ;
 }
-.mirai,.little{
-   /* display: none; */
-   position: relative;
-   bottom: 500px;
-   z-index: -1;
-   transition: 0.8s ease;
+.child-1>div{
+   width: 75%;
+   background-color: burlywood;
+   height: 100%;
+   border-radius: 5px;
+   text-align: center;
 }
-.mirai-container,.little-container{
+.child-2>div{
+   width: 50%;
+   background-color: burlywood;
+   height: 100%;
+   border-radius: 5px;
+   text-align: center;
+}
+.child-3>div{
+   width: 30%;
+   background-color: burlywood;
+   height: 100%;
+   border-radius: 5px;
+   text-align: center;
+}
+.child-4>div{
+    width: 10%;
+   background-color: burlywood;
+   height: 100%;
+   border-radius: 5px;
+   text-align: center;
+}
+.child-5>div{
+    width: 100%;
+   background-color: burlywood;
+   height: 100%;
+   border-radius: 5px;
+   text-align: center;
+}
+.first,.second{
+   width: 100%;
+}
+/* html,body{
+   height: 100%;
+} */
+/* body{
+   
    display: flex;
    justify-content: center;
-   gap: 10px;
-   align-items: start;
+   align-items: center;
    
+} */
+.parent{
+   width: 300px;
+   height: 300px;
+   /* background-color: purple; */
+   border: 2px solid;
+   font-size: 4em;
+   /*  */
+   /* 64px */
 }
-   .item{
-      width: 100px;
-      height: 100px;
-      margin: 10px;
-   }
-#mirai,#little{
-   display: none;
+html{
+   font-size: 0.6rem;
+   /* 48px *4em */
 }
-#mirai:checked~.mirai{
-   /* display: flex;
-   justify-content: center; */
-   bottom: 0px;
-   z-index: -1;
-}
-#little:checked~.little{
-   /* display: flex;
-   justify-content: center; */
-   bottom:120px;
-   z-index: -1;
-}
-img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
- .item-1{
-    background-color: lightblue;
- }
- .item-2{
-    background-color: lightcoral;
- }
- .item-3{
-    background-color: lightgray;
- }
- .item-4{
-    background-color: lightgreen;
- }
- .item-5{
-    background-color: lightsalmon;
- }
- .img-1,.img-2,.img-3,.img-4,.img-5,.img-6{
-   display: none;
- }
- #a:checked~.img-1{
-   position: absolute;
-   top: 0;
-   display: inline-block;
-   /* width: 500px;
-   height: 500px; */
 
- }
-#d:checked~:root{
-   background-color: black;
+.parent>div{
+   /*16+16=32px  */
+   /* font-size: 2em;  */
+
+
+   /* width: 2rem;
+   height: 2rem; */
+   background-color: purple;
 }
