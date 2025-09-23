@@ -1,120 +1,286 @@
-/*
-   task
-   ----
-units in css
-------------
-   units are to specify the size of the container
-there are 2 types of units
-1. absolute units
-      px,in,cm,mm ->fixed units
-
-2. relative units
-   %
-   vh,-viewport-height
-   vw-viewport-width
-   em- element size
-   rem- root element size
-
-
-
-   calc()-function
-
-   default -font-size :16px in html
-   em- parent element font-siz
-   rem- root element font-size
-
-
-*/
-/* *{
+ *{
    margin: 0;
    padding: 0;
-} */
-.container{
-   border: 2px solid;
-   /* height: 50px; */
+   box-sizing: border-box;
+   font-family: "Inconsolata", sans-serif;
+   /* background-color: aliceblue; */
+   filter: grayscale(50%)
+ }
+ .nav-container{
+   width: 100%;
+   background-color: black;
+   color: white;
    display: flex;
-   
-}
-/* .container>.child-1{
-   background-color: red;
-   width: 25%;
-   height: 200px;
-} */
-.child-1,.child-2,.child-3,.child-4,.child-5{
+   justify-content: space-evenly ;
+   position: fixed;
+   top: 0px;
+   z-index: +1;
+ }
+ .nav-container>.item{
+   width: 300px;
+   padding: 15px;
+   text-align: center;
+   margin: 5px 0 ;
+   transition: 0.8s ease;
+ }
+ .item:hover{
+   background-color: whitesmoke;
+   color: black;
+   cursor: pointer;
+ }
+ html,body{
+    height: 100%;
+ }
+ .bg-container{
    width: 100%;
-   height: 20px;
-   background-color: red;
-   margin: 10px 0px;
-   border-radius:5px ;
-}
-.child-1>div{
-   width: 75%;
-   background-color: burlywood;
-   height: 100%;
-   border-radius: 5px;
-   text-align: center;
-}
-.child-2>div{
-   width: 50%;
-   background-color: burlywood;
-   height: 100%;
-   border-radius: 5px;
-   text-align: center;
-}
-.child-3>div{
-   width: 30%;
-   background-color: burlywood;
-   height: 100%;
-   border-radius: 5px;
-   text-align: center;
-}
-.child-4>div{
-    width: 10%;
-   background-color: burlywood;
-   height: 100%;
-   border-radius: 5px;
-   text-align: center;
-}
-.child-5>div{
-    width: 100%;
-   background-color: burlywood;
-   height: 100%;
-   border-radius: 5px;
-   text-align: center;
-}
-.first,.second{
-   width: 100%;
-}
-/* html,body{
-   height: 100%;
-} */
-/* body{
-   
+   height: 74%;
+   background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
+ }
+ .bg-container>.text-container>p{
+   font-size: 6rem;
+   text-align: center;
+   color: white;
+   line-height: 140px;
+ }
+ .text-container-2{
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   background-color: black;
+   color: white;
+   padding: 4px;
+ }
+ .text-container-3{
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   color: white;
+ }
+ .main-container{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: bisque;
+ }
+ .main-container>.main{
+   width: 50%;
+   /* border: 2px solid; */
+ }
+ .main-container>.main>.about-container{
+   display: flex;
+   justify-content: center;
    
-} */
-.parent{
-   width: 300px;
-   height: 300px;
-   /* background-color: purple; */
-   border: 2px solid;
-   font-size: 4em;
-   /*  */
-   /* 64px */
+ }
+ .about-container>p{
+   padding: 5px;
+   background-color: black;
+   color: white;
+   letter-spacing: 5px;
+   font-size: 1.2rem;
+   margin: 40px 0px;
+
+ }
+ .para-container>p{
+    margin: 20px 0px;
+   line-height: 20px;
+   text-align: justify;
+ }
+ .para-container2>p{
+   margin: 20px 0px;
+    line-height: 20px;
+   text-align: justify;
+ }
+ .para-container3{
+   background-color: aquamarine;
+   padding: 20px;
+   border-left-width: 8px;
+   border-left-style: solid;
+   border-left-color: rgba(0, 0, 0, 0.566);
+   
+ }
+ .para-container3>p{
+   padding: 10px;
+ }
+ .image-container{
+   margin: 30px 0px;
+ }
+ .image-container>img{
+   width: 100%;
+ }
+ .time-container{
+   padding: 20px;
+
+ }
+ .time-container>p{
+   padding: 10px;
+ }
+ .menu-container{
+   display: flex;
+   justify-content: center;
+
+
+ }
+  .menu-container>p{
+   /* background-color: black; */
+   padding: 5px;
+   background-color: black;
+   color: white;
+   letter-spacing: 5px;
+   font-size: 1.2rem;
+   margin: 40px 0px;
+   width: fit-content;
+ }
+ .food-container{
+  /* border: 2px solid; */
+  /* height: 600px; */
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .food-names-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .food-names-container>div{
+  width: 300px;
+  text-align: center;
+  /* padding: px; */
+ }
+ .food-names-container>div>label{
+  padding: 10px;
+  display: inline-block;
+ }
+ .food-names-container>div:hover{
+  background-color: brown;
+  cursor: pointer;
+ }
+ .eat-container{
+  width: 100%;
+  font-size: 1.2rem;
+  display: none;
+ }
+ 
+ .eat-container>.eatlist{
+  margin: 40px 0px;
+  padding: 14px;
+ }
+ .eatlist>h5,p{
+  padding: 10px;
+ }
+ .drink-container{
+  width: 100%;
+  font-size: 1.2rem;
+  display: none;
+ }
+ .drink-container>.drinklist{
+   margin: 40px 0px;
+    padding: 14px;
+ }
+ #eat,#drink{
+  display: none;
+ }
+ #eat:checked~.eat-container{
+  display: inline-block;
+  
+ }
+#drink:checked~.drink-container{
+  display: inline-block;
 }
-html{
-   font-size: 0.6rem;
-   /* 48px *4em */
+.coffee-image{
+  width: 100%;
+  margin: 30px 0px;
+}
+.coffee-image>img{
+  width: 100%;
+  
+}
+.para-text-container{
+  padding: 5px;
+}
+.address-container{
+  width: 100%;
+  margin: 10px 0px;
+}
+.address-container>img{
+  width: 100%;
+}
+ .fly-container{
+  font-size: 1.2rem;
+ }
+ .fly-container>p>span{
+  background-color: black;
+  color: white;
+  padding: 5px;
+ }
+ .form-container{
+  margin: 10px 0px;
+  width: 100%;
+  font-size: 1.2rem;
+ }
+ .form-container>input{
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+ }
+.form-container>div>input{
+  border: 2px solid;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+}
+.form-container>div>input:hover{
+  background-color: aquamarine;
+  color: black;
+}
+.footer-container{
+  text-align: center;
+  padding: 60px;
+  background-color: aquamarine;
+}
+@media screen and (min-width: 280px) and (max-width: 400px) {
+  .bg-container>.text-container>p{
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  .bg-container{
+    height: 40%;
+  }
+  .text-container-2{
+    display: none;
+  }
+  .text-container-3{
+    display: none;
+  }
+  .main-container>.main{
+    width: 100%;
+  }
+  :root{
+    font-size: 0.8rem;
+  }
+  .fly-container>p>span{
+    padding: 2px;
+  }
+  .form-container>div>input{
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+  .footer-container{
+    padding: 20px;
+  }
+}
+@media screen  and (min-width: 400px) and (max-width: 800px){
+  .main-container>.main{
+    width: 80%;
+  }
 }
 
-.parent>div{
-   /*16+16=32px  */
-   /* font-size: 2em;  */
 
-
-   /* width: 2rem;
-   height: 2rem; */
-   background-color: purple;
-}

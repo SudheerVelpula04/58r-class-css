@@ -1,71 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <!-- <div class="container">
-         <div class="first">
-            <div class="child-1">
-            <div>75%</div>
-         </div>
-         <div class="child-2">
-            <div>
-                50%
-            </div>
-         </div>
-         <div class="child-3">
-            <div>
-                30%
-            </div>
-         </div>
-         <div class="child-4">
-            <div>
-                10%
-            </div>
-         </div>
-         <div class="child-5">
-            <div>
-                100%
-            </div>
-         </div>
-         </div>
-         <div class="second">
-            <div class="child-1">
-            <div>75%</div>
-         </div>
-         <div class="child-2">
-            <div>
-                50%
-            </div>
-         </div>
-         <div class="child-3">
-            <div>
-                30%
-            </div>
-         </div>
-         <div class="child-4">
-            <div>
-                10%
-            </div>
-         </div>
-         <div class="child-5">
-            <div>
-                100%
-            </div>
-         </div>
-         </div>
-
-    </div> -->
-
-    <div class="parent">
-        <div>
-            simple
-
+    <!-- nav-container -->
+    <div class="nav-container">
+        <div class="item item-1">HOME</div>
+        <div class="item item-2">ABOUT</div>
+        <div class="item item-3">MENU</div>
+        <div class="item item-4">WHERE</div>
+    </div>
+    <!-- bg -container -->
+    <div class="bg-container">
+        <div class="text-container">
+            <p>the
+                <br>
+                Cafe
+            </p>
+        </div>
+        <div class="text-container-2">
+            Open from 6am to 5pm
+        </div>
+        <div class="text-container-3">
+            15 Adr street, 5015
         </div>
     </div>
+
+    <div class="main-container">
+        <div class="main">
+            <div class="about-container">
+                <p>ABOUT THE CAFE</p>
+            </div>
+            <div class="para-container">
+                <p>
+                    The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="para-container2">
+                <p>
+                    In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
+                    sandwiches, as well as a selection of sides and salads and other good stuff.
+                </p>
+            </div>
+            <div class="para-container3">
+                <p>
+                    <i>
+                        "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the
+                        new sweet.
+                    </i>
+                </p>
+                <p>
+                    Chef, Coffeeist and Owner: Liam Brown
+                </p>
+            </div>
+
+            <!-- image-container -->
+            <div class="image-container">
+                <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="">
+            </div>
+
+            <!-- times - container -->
+
+
+            <div class="time-container">
+                <p><b>Opening hours:</b> everyday from 6am to 5pm.</p>
+                <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+            </div>
+
+            <!-- THE MENU container -->
+
+            <div class="menu-container">
+                <p>THE MENU</p>
+            </div>
+            <!-- eat and drink container -->
+            <div class="food-container">
+                <div class="food-names-container">
+                    <div><label for="eat">Eat</label></div>
+                    <div><label for="drink">Drink</label></div>
+                </div>
+                <input type="radio" id="eat" name="food">
+                <input type="radio" id="drink" name="food">
+
+                <div class="eat-container">
+                    <div class="eatlist basket-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="eatlist fruits-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="eatlist waffle-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="eatlist eggs-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="eatlist blueberry-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                </div>
+                <div class="drink-container">
+                    <div class="drinklist basket-container">
+                        <h5>Coffee</h5>
+                        <p>Regular coffee 2.50</p>
+                    </div>
+                    <div class="drinklist fruits-container">
+                        <h5>Chocolato</h5>
+                        <p>Chocolate espresso with milk 4.50</p>
+                    </div>
+                    <div class="drinklist waffle-container">
+                        <h5>Corretto</h5>
+                        <p>Whiskey and coffee 5.00</p>
+                    </div>
+                    <div class="drinklist eggs-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="drinklist blueberry-container">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="coffee-image">
+                <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="">
+            </div>
+
+
+
+            <div class="menu-container">
+                <p>WHERE TO FIND US</p>
+            </div>
+            <div class="para-text-container">
+                Find us at some address at some place.
+            </div>
+
+            <div class="address-container">
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+            </div>
+
+            <div class="fly-container">
+                <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your
+                    needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                </p>
+                <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+            </div>
+
+            <div class="form-container">
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="How many people">
+                <input type="datetime-local" name="date" placeholder="" value="2020-11-16T 20:00">
+                <input type="text" placeholder="Message /  special Requirements">
+                <div>
+                    <input type="submit" value="SEND MESSAGE">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <p>Powered by <a href="#">w3.css</a></p>
+    </div>
+
+
+
 </body>
+
 </html>
