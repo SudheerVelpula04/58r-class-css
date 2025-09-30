@@ -1,87 +1,118 @@
  /*
-    animations
-    transforms
-    p-elements
-    grid
+  grid in css
+  ----------
+  x and y axis 
 
-    display:value->grid;
-    two daimensanl
-        row's and column
 
-        
-    :hover
-    ::after
-
- */
-
- p{
-    border: 2px solid black;
-    padding: 10px;
-    background-color: aqua;
-    color: rgb(230, 100, 35);
- }
- span{
-    color: blue;
-    font-style: italic;
- }
- /* p::before{
-    content: "Note: ";
-    font-style: italic;
-    color: blue;
-    
-
- } */
- /*
- p::after{
-    content: "end-------!";
-    color: rgb(155, 191, 11);
-    font-style: italic;
-    background-color: black;
-    padding: 5px;
-     border-radius: 15px; */
-    /* border-top-left-radius: 10px; 
- }
-    */
-
-/* 
-    p::before{
-        content: "🫠-🙃";
-        font-size: xx-large;
-
-    }
-    p::after{
-        content: "💦";
-        font-size: xx-large;
-
-    }
   */
-/* 
-  p::first-letter{
-    color: gold;
-    font-size: 4rem;
-    text-transform: uppercase;
-    background-color: beige;
-    border-radius: 20px;
+ .container{
+  border: 2px solid;
+  /* display: flex; */
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3,1fr);
+  /* grid-template-rows: 100px 300px; height */
+  /* grid-gap: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; */
+  grid-gap:5px ;
+  height: 100vh;
+ }
+  .item-1{
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item-2{
+    background-color: lightcoral;
+  }
+  .item-3{
+    background-color: lightgreen;
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .item-4{
+    background-color: lightslategray;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .item-5{
+    background-color: lightsteelblue;
+  }
+  .item-6{
+    background-color: lightsalmon;
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .item-7{
+    background-color: rgb(47, 114, 181);
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item-8{
+    background-color: rgb(26, 151, 193);
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .item-9{
+    background-color: rgb(151, 53, 53);
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .semantic{
+    border: 5px solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
 
   }
-  p::first-line{
-    background-color: yellow;
-    text-transform: uppercase;
-    color: lightgreen;
+  .sem{
+    border: 5px solid;
   }
-  p::selection{
-    background-color: purple;
-    color: white;
-  } */
 
-  /* li::before{
-    content: "👉";
-    font-size: 2rem;
+  .sem-1{
+    background-color: blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
-  li::after{
-    content: "🐶";
-    font-size: 2rem;
+  .sem-2{
+    background-color: lightcoral;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
-  li::marker{
-    content: "🐾";
-  } */
+  .sem-3{
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .sem-4{
+    background-color: cadetblue;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+  }
+  .sem-5{
+    background-color: lightslategrey;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+  .sem-6{
+    background-color: lime;
+    grid-column-start:1 ;
+    grid-column-end: 4;
+  }
+  .sem>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
